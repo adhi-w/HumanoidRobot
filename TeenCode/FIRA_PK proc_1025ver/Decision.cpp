@@ -1,0 +1,27 @@
+// Decision.cpp: implementation of the CDecision class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "FIRA_PK proc.h"
+#include "Decision.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CDecision::CDecision()
+{
+
+}
+
+CDecision::~CDecision()
+{
+
+}
