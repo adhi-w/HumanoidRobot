@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: OdemeterTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\MRL\AppData\Local\Temp\RSP6413.tmp" with contents
+[
+cxcore.lib cv.lib ml.lib cvaux.lib highgui.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/OdemeterTest.pdb" /debug /machine:I386 /out:"Debug/OdemeterTest.exe" /pdbtype:sept 
+".\Debug\BodyControl.obj"
+".\Debug\General.obj"
+".\Debug\HeadControl.obj"
+".\Debug\MainFrm.obj"
+".\Debug\OdemeterTest.obj"
+".\Debug\OdemeterTestDoc.obj"
+".\Debug\OdemeterTestView.obj"
+".\Debug\Serial.obj"
+".\Debug\StdAfx.obj"
+".\Debug\OdemeterTest.res"
+]
+Creating command line "link.exe @C:\Users\MRL\AppData\Local\Temp\RSP6413.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+OdemeterTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

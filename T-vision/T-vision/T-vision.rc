@@ -1,0 +1,246 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\Tvision.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\T-vision.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About T-vision"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "T-vision, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_TVISION_DIALOG DIALOGEX 0, 0, 753, 283
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "T-Vision"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "START",IDSTART,461,7,50,14
+    PUSHBUTTON      "EXIT",IDEXIT,461,26,50,14
+    CONTROL         "",IDC_pic_capture,"Static",SS_BLACKFRAME,7,7,214,149
+    CONTROL         "",IDC_pic_thresh,"Static",SS_BLACKFRAME,225,7,213,148
+    CONTROL         "",IDC_Hmin,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,278,169,81,12
+    LTEXT           "Hmin",IDC_STATIC,312,160,22,12
+    EDITTEXT        IDC_EDIT_Hmin,362,169,22,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_Smin,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,278,195,81,12
+    LTEXT           "Smin",IDC_STATIC,313,186,22,12
+    EDITTEXT        IDC_EDIT_Smin,362,195,22,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_Vmin,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,278,222,81,12
+    LTEXT           "Vmin",IDC_STATIC,312,210,22,12
+    EDITTEXT        IDC_EDIT_Vmin,362,219,22,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_Hmax,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,389,169,81,12
+    LTEXT           "Hmax",IDC_STATIC,423,160,22,12
+    EDITTEXT        IDC_EDIT_Hmax,473,168,22,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_Smax,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,390,195,81,12
+    LTEXT           "Smax",IDC_STATIC,422,185,22,12
+    EDITTEXT        IDC_EDIT_Smax,474,195,22,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_Vmax,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,390,222,81,12
+    LTEXT           "Vmax",IDC_STATIC,423,211,22,12
+    EDITTEXT        IDC_EDIT_Vmax,474,219,22,13,ES_AUTOHSCROLL
+    CONTROL         "Orange",IDC_Orange,"Button",BS_AUTORADIOBUTTON,233,169,40,10
+    CONTROL         "Cyan",IDC_Cyan,"Button",BS_AUTORADIOBUTTON,233,222,33,10
+    CONTROL         "Magenta",IDC_Magenta,"Button",BS_AUTORADIOBUTTON,233,204,44,10
+    CONTROL         "Yellow",IDC_Yellow,"Button",BS_AUTORADIOBUTTON,233,187,36,10
+    LTEXT           "Send Data",IDC_STATIC,7,163,34,8
+    LTEXT           "Static",IDC_SendData,44,162,173,13,WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "Connect",IDC_Connect,461,70,50,14
+    PUSHBUTTON      "Disconnect",IDC_Disconnect,461,89,50,14
+    LTEXT           "PortCom",IDC_STATIC,459,54,28,8
+    EDITTEXT        IDC_EDIT_ComPort,488,52,22,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Forward",IDC_BUTTON1,594,44,50,23
+    PUSHBUTTON      "Backward",IDC_BUTTON2,594,107,50,23
+    PUSHBUTTON      "Shift Left",IDC_BUTTON3,559,76,50,22,BS_MULTILINE
+    PUSHBUTTON      "Shift Right",IDC_BUTTON4,632,76,50,22,BS_MULTILINE
+    PUSHBUTTON      "Fast Walk",IDC_BUTTON5,562,146,50,14
+    PUSHBUTTON      "Walk",IDC_BUTTON6,626,146,50,14
+    PUSHBUTTON      "Start / Stop",IDC_BUTTON7,687,36,50,26
+    LTEXT           "PortCom",IDC_STATIC,632,18,28,8
+    EDITTEXT        IDC_EDIT_RemoteComPort,661,16,22,14,ES_AUTOHSCROLL
+    GROUPBOX        "Remote Control",IDC_STATIC,545,10,197,188
+    DEFPUSHBUTTON   "Moved",IDSTART2,462,115,50,14
+    DEFPUSHBUTTON   "Unmoved",IDSTART3,462,133,50,14
+    PUSHBUTTON      "Turn Off",IDC_BUTTON8,683,118,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "T-vision.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "T-vision.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_TVISION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 746
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 276
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About T-vision..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\Tvision.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
